@@ -6,7 +6,13 @@ var estCeUnNombre = isNaN(donneeSaisie);
 
 while (estCeUnNombre) {
 	alert("Ceci n'est pas un nombre");
-	donneeSaisie;
-	estCeUnNombre;
-}
+	donneeSaisie = parseInt(prompt('Veuillez saisir un nombre en chiffre compris entre 0 et 999'), 10);
+	estCeUnNombre = isNaN(donneeSaisie);
+};
 
+if ((0<= donneeSaisie) && (donneeSaisie <= 999)) {
+	alert("le nombre que vous avez saisie s'écrit en toutes lettres comme ceci ... " + intToString[donneeSaisie]);
+} else {
+	alert("Le nombre saisie n'est pas compris entre 0 et 999... ");
+
+}
